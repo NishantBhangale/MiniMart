@@ -44,12 +44,12 @@ CREATE EXTENSION IF NOT EXISTS pgcrypto;
 -- Seed catalog
 INSERT INTO products (sku, name, description, price_cents, image_url, category, stock)
 VALUES
-  ('MM-001', 'Ceramic Pour-Over Kit', 'Slow-brew ceramic dripper with reusable filter.', 3400, 'https://images.unsplash.com/photo-1523904394201-6a5c5b1a6c3d', 'Kitchen', 24),
-  ('MM-002', 'Canvas Utility Apron', 'Waxed canvas, brass hardware, one size.', 4200, 'https://images.unsplash.com/photo-1585909695284-32d2985ac9c0', 'Home', 15),
-  ('MM-003', 'Enamel Storage Tin Set', 'Set of 3 stacking tins for pantry staples.', 2800, 'https://images.unsplash.com/photo-1584736286279-5d85e6b408e0', 'Kitchen', 40),
-  ('MM-004', 'Oak Cutting Board', 'End-grain oak, food-safe finish.', 5600, 'https://images.unsplash.com/photo-1594736797933-d0a9ba5fe4f6', 'Kitchen', 8),
-  ('MM-005', 'Linen Market Tote', 'Heavyweight linen, leather straps.', 2200, 'https://images.unsplash.com/photo-1591561954557-26941169b49e', 'Home', 30),
-  ('MM-006', 'Cast Iron Skillet 10in', 'Pre-seasoned, made for daily use.', 3900, 'https://images.unsplash.com/photo-1620626011761-996317b8d101', 'Kitchen', 3),
-  ('MM-007', 'Wool Throw Blanket', 'Merino wool, woven in small batches.', 6800, 'https://images.unsplash.com/photo-1580301762395-83f9b0b4b6f4', 'Home', 12),
-  ('MM-008', 'Glass Pour Bottles (2pk)', 'Borosilicate glass with cork stoppers.', 1900, 'https://images.unsplash.com/photo-1602166242292-8d3a1c5b6c3f', 'Kitchen', 50)
+('MM-001', 'Ceramic Pour-Over Kit', 'Slow-brew ceramic dripper with reusable filter.', 3400, 'https://images.unsplash.com/photo-1758221052634-33f352d1318b?w=800&auto=format&fit=crop', 'Kitchen', 24),
+('MM-002', 'Canvas Utility Apron', 'Waxed canvas, brass hardware, one size.', 4200, 'https://images.unsplash.com/photo-1732565649629-eb4932a1ec09?w=800&auto=format&fit=crop', 'Home', 15),
+('MM-003', 'Enamel Storage Tin Set', 'Set of 3 stacking tins for pantry staples.', 2800, 'https://images.unsplash.com/photo-1776219189350-728ddf739d6d?w=800&auto=format&fit=crop', 'Kitchen', 40),
+('MM-004', 'Oak Cutting Board', 'End-grain oak, food-safe finish.', 5600, 'https://images.unsplash.com/photo-1721934081906-a92cdc010b75?w=800&auto=format&fit=crop', 'Kitchen', 8),
+('MM-005', 'Linen Market Tote', 'Heavyweight linen, leather straps.', 2200, 'https://images.unsplash.com/photo-1535981444082-2a5dc0548ef3?w=800&auto=format&fit=crop', 'Home', 30),
+('MM-006', 'Cast Iron Skillet 10in', 'Pre-seasoned, made for daily use.', 3900, 'https://images.unsplash.com/photo-1483737778139-63dff4421d43?w=800&auto=format&fit=crop', 'Kitchen', 3),
+('MM-007', 'Wool Throw Blanket', 'Merino wool, woven in small batches.', 6800, 'https://images.unsplash.com/photo-1637819976869-928427bd7380?w=800&auto=format&fit=crop', 'Home', 12),
+('MM-008', 'Glass Pour Bottles (2pk)', 'Borosilicate glass with cork stoppers.', 1900, 'https://images.unsplash.com/photo-1515879128292-964efc3ebb25?w=800&auto=format&fit=crop', 'Kitchen', 50)
 ON CONFLICT (sku) DO NOTHING;
